@@ -16,7 +16,7 @@ function App() {
     const formData = new FormData();
     formData.append("file", file);
     await axios
-      .post("http://localhost:3001/upload", formData, { text: text })
+      .post("https://zzsocapi.onrender.com/upload", formData, { text: text })
       .then((res) => {
         console.log(res.data); //   https://bigserver.onrender.com/upload
 
